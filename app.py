@@ -30,6 +30,8 @@ data3['ticket_id'] = data3['ticket_id'].fillna(0).astype(int)
 
 # Создание приложения Dash
 app = Dash(__name__)
+server = app.server
+
 
 app.layout = html.Div([
     html.H1("Analyse des tickets", style={'text-align': 'center'}),
